@@ -120,7 +120,8 @@ In `~/.paseo/config.json`:
     "relay": {
       "enabled": true,
       "endpoint": "relay.yourdomain.com:443",
-      "publicEndpoint": "relay.yourdomain.com:443"
+      "publicEndpoint": "relay.yourdomain.com:443",
+      "useTls": true
     }
   }
 }
