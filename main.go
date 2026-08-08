@@ -37,10 +37,10 @@ var version = "dev"
 // ---- WebSocket upgrader ----
 
 // maxMessageBytes is the maximum size of a single WebSocket message.
-const maxMessageBytes = 10 * 1024 * 1024 // 10 MB
+const maxMessageBytes = 32 * 1024 * 1024 // 32 MiB
 
 // maxPendingBytes is the maximum total bytes buffered per pending frameBuffer.
-const maxPendingBytes = 32 * 1024 * 1024 // 32 MB
+const maxPendingBytes = maxMessageBytes + 1 // message plus 1-byte type prefix
 
 var upgrader = websocket.Upgrader{
 	HandshakeTimeout: 10 * time.Second,
