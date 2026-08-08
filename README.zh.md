@@ -120,7 +120,8 @@ TLS 应在上游终止（nginx、Caddy、Cloudflare 等）。
     "relay": {
       "enabled": true,
       "endpoint": "relay.yourdomain.com:443",
-      "publicEndpoint": "relay.yourdomain.com:443"
+      "publicEndpoint": "relay.yourdomain.com:443",
+      "useTls": true
     }
   }
 }
